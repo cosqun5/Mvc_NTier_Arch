@@ -1,0 +1,46 @@
+﻿@using Entities.Concrate
+@model List<About>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-sm-12 col-xl-12">
+	<div class="bg-secondary rounded h-100 p-4">
+		<h6 class="mb-4">Basic Table</h6>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Title</th>
+					<th scope="col">Description</th>
+					<th scope="col">ImageUrl</th>
+					<th scope="col">Email</th>
+					<th scope="col">Phone</th>
+					<th scope="col">Degree</th>
+					<th scope="col">City</th>
+					<th scope="col">Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+
+					<tr>
+						<th scope="row">1</th>
+						<td>@item.Title</td>
+						<td>@item.Description</td>
+						<td>@item.ImageUrl</td>
+						<td>@item.Email</td>
+						<td>@item.Phone</td>
+						<td>@item.Degree</td>
+						<td>@item.City</td>
+						<td>@item.Age</td>
+			
+					</tr>
+				}
+
+			</tbody>
+		</table>
+	</div>
+</div>
