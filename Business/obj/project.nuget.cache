@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T8fQeY+hbQYx1b3HDfL3P4jadRvRMpHY8SiBRzL3CI59lJE2DW/gVxQzf0G/qNTPxDGqA5PahgYuPZjFSjdNVg==",
+  "dgSpecHash": "FVa/Vd62JXTCJFrzfs/EyDLdflhYtSTGIADL6w2GEw7sqL4MX6gLSbooPRppMl8jU3iQnf3Kx17DmkIW+vYSHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

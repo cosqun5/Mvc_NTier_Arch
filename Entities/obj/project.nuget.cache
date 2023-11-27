@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w0klfZwCrJ6O/+4k/PB4LkP9HO+VyXbqm2v1fgz5iznsozaGVAD03BnEUKWwrw/Fwbvf4zS29WpcI3RNXnHMgQ==",
+  "dgSpecHash": "THd7pzkBOe09TcPTQSyhiGYoQB9lrd6WmeJ1uC8CfyrBfhCnjmVLiEI61EXrCMXRVVEvkJLYSkIQWkM2ubHi9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

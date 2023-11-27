@@ -9,37 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Personal_Portfolio
 build_property.RootNamespace = Personal_Portfolio
-build_property.ProjectDir = C:\Users\LENOVO\Desktop\Personal_Portfolio\
+build_property.ProjectDir = C:\Users\LENOVO\Desktop\Mvc.NTierArch\Personal_Portfolio\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\LENOVO\Desktop\Personal_Portfolio
+build_property.MSBuildProjectDirectory = C:\Users\LENOVO\Desktop\Mvc.NTierArch\Personal_Portfolio
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/LENOVO/Desktop/Personal_Portfolio/Areas/Admin/Views/About/Create.cshtml]
+[C:/Users/LENOVO/Desktop/Mvc.NTierArch/Personal_Portfolio/Areas/Admin/Views/About/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWJvdXRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Personal_Portfolio/Areas/Admin/Views/About/Index.cshtml]
+[C:/Users/LENOVO/Desktop/Mvc.NTierArch/Personal_Portfolio/Areas/Admin/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWJvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Personal_Portfolio/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/LENOVO/Desktop/Mvc.NTierArch/Personal_Portfolio/Areas/Admin/Views/About/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWJvdXRcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Mvc.NTierArch/Personal_Portfolio/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Personal_Portfolio/Views/Shared/Error.cshtml]
+[C:/Users/LENOVO/Desktop/Mvc.NTierArch/Personal_Portfolio/Areas/Admin/Views/_Viewimports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdpbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Mvc.NTierArch/Personal_Portfolio/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Personal_Portfolio/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/LENOVO/Desktop/Mvc.NTierArch/Personal_Portfolio/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Personal_Portfolio/Views/_ViewImports.cshtml]
+[C:/Users/LENOVO/Desktop/Mvc.NTierArch/Personal_Portfolio/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Personal_Portfolio/Views/_ViewStart.cshtml]
+[C:/Users/LENOVO/Desktop/Mvc.NTierArch/Personal_Portfolio/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

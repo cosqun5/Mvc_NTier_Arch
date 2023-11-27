@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9bQtZNgbvR8Ow4TdrhSBOyQ5yCwhXbWp4j5M5g6mUGk4mSpiCJQga0AaVQWV9/3CMtxBrKjgUKVwPIJjhHgFSg==",
+  "dgSpecHash": "jrRZcwPH7EBpO8zjEkl0l2GClzJlALvLMoTEHdAsMw5H0+EoCtRVFxKmQqxE6SnubU+ucijgsaIkmC50hM77gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.25\\microsoft.entityframeworkcore.6.0.25.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.25\\microsoft.entityframeworkcore.abstractions.6.0.25.nupkg.sha512",

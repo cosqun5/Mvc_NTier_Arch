@@ -3,11 +3,12 @@
 @{
 	ViewData["Title"] = "Index";
 	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+	var count = 1;
 }
 
 <div class="col-sm-12 col-xl-12">
 	<div class="bg-secondary rounded h-100 p-4">
-		<h6 class="mb-4">Basic Table</h6>
+		<h6 class="mb-4">About</h6>
 		<table class="table">
 			<thead>
 				<tr>
@@ -20,6 +21,8 @@
 					<th scope="col">Degree</th>
 					<th scope="col">City</th>
 					<th scope="col">Age</th>
+					<th scope="col">Update</th>
+					<th scope="col">Delete</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -27,19 +30,22 @@
 				{
 
 					<tr>
-						<th scope="row">1</th>
+						<th scope="row">@count</th>
 						<td>@item.Title</td>
 						<td>@item.Description</td>
-						<td>@item.ImageUrl</td>
+						<td><img src="~/assets/img/@item.ImageUrl" style="height:100px; width:100px;" /></td>
 						<td>@item.Email</td>
 						<td>@item.Phone</td>
 						<td>@item.Degree</td>
 						<td>@item.City</td>
 						<td>@item.Age</td>
+						<td> <a type="button" class="btn btn-outline-success m-2" asp-area="Admin" asp-action="Update" asp-controller="About" asp-route-Id="@item.Id">Update</a></td>
+						<td> <a type="button" class="btn btn-outline-primary m-2" asp-area="Admin" asp-action="Delete" asp-controller="About" asp-route-Id="@item.Id">Delete</a></td>
 			
 					</tr>
+					count++;
 				}
-
+				<a class="btn btn-outline-success" asp-area="Admin" asp-controller="About" asp-action="Create">Create</a>
 			</tbody>
 		</table>
 	</div>

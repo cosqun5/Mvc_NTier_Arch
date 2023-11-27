@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KJ6aU8iMqim1DBkIvnOP2KwV9gn9DCYUhbY0l1D9REdRbLiJgP+ICU0gNVH8JpDs7E9N89EAVnc3yen32GI+gg==",
+  "dgSpecHash": "uacK42N7C5PjDB4hU0Wqp6qh9oviGxibYh37p20AtoDBVIAP5itFUkNkmZewmCU63fPX3q0eydgykLiIAZMPmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Personal_Portfolio\\Personal_Portfolio.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\Personal_Portfolio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -19,13 +19,18 @@ namespace Business.Utilities.Extensions
 		}
 		public static async Task<string> SaveAsync(this IFormFile file, string rootpath)
 		{
-			string filename = Guid.NewGuid().ToString() + file.FileName;
+			string fileExtension = Path.GetExtension(file.FileName);
+			string filename = $"{Guid.NewGuid()}{fileExtension}";
 			string root = Path.Combine(rootpath, filename);
+
 			using (FileStream fileStream = new FileStream(root, FileMode.Create))
 			{
 				await file.CopyToAsync(fileStream);
 			}
+
 			return filename;
 		}
+
 	}
+
 }

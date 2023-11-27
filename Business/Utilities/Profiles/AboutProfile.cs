@@ -13,8 +13,10 @@ namespace Business.Utilities.Profiles
 	{
         public AboutProfile()
         {
-            CreateMap<AboutCreatVM, About>();
-            CreateMap<AboutUpdateVM, About>();
+			CreateMap<AboutCreatVM, About>();
+			//.ForMember(dest => dest.ImageUrl, opt => opt.MapFrom(src => src.Photo.FileName));
+
+			CreateMap<AboutUpdateVM, About>();
 
         }
     }

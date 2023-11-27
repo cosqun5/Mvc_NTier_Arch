@@ -1,17 +1,16 @@
-﻿using Entities.ViewModels.Categorys;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entities.Concrate;
+using Entities.ViewModels.Abouts;
+using Entities.ViewModels.Categorys;
+
 
 namespace Business.Services.Abstract
 {
 	public interface ICategoryService
 	{
-		//Task<List<CategoryGetVM>> GetAll();
-		//Task AddAsync(CategoryCreateVM creatVM);
-		//Task DeleteAsync(int id);
-		//Task UpdateAsync(CategoryUpdateVM updateVM);
+		Task<List<Category>> GetList();
+		Task<Category> GetById(int id);
+		Task Insert(Category category);
+		Task Update(Category category);
+		Task Delete(int id);
 	}
 }

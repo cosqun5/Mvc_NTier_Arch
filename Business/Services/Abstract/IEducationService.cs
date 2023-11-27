@@ -1,4 +1,5 @@
-﻿using Entities.ViewModels.Educations;
+﻿using Entities.Concrate;
+using Entities.ViewModels.Educations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,10 @@ namespace Business.Services.Abstract
 {
 	public interface IEducationService
 	{
-		//Task<List<EducationGetVM>> GetAll();
-		//Task AddAsync(EducationCreateVM creatVM);
-		//Task DeleteAsync(int id);
-		//Task UpdateAsync(EducationUpdateVM updateVM);
+		Task<List<Education>> GetList();
+		Task<Education> GetById(int id);
+		Task Insert(Education education);
+		Task Update(Education education);
+		Task Delete(int id);
 	}
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "inXEA6URET0XOE+0RssWGe9QXY33v2BUT3NYUoxONTW4+ElsbvpPvCIBBAxJOWn6pDmsYFtYMrQs2ZQEj8EAQw==",
+  "dgSpecHash": "ekUNRdgxDwKczo1THD4TRG23SQTDECYz2PP8+pXzYrl1o0/WnMfJ77iiSUENi5Zz+ZqmWg+h2Zr1DO3OqSENJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
