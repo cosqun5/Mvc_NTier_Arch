@@ -1,4 +1,4 @@
-﻿using Entities.ViewModels.Features;
+﻿using Entities.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +9,11 @@ namespace Business.Services.Abstract
 {
 	public interface IFeatureService
 	{
-		
-			//Task<List<FeatureGetVM>> GetAll();
-			//Task AddAsync(FeatureCreateVM creatVM);
-			//Task DeleteAsync(int id);
-			//Task UpdateAsync(FeatureUpdateVM updateVM);
+
+		Task<List<Feature>> GetList();
+		Task<Feature> GetById(int id);
+		Task Insert(Feature feature);
+		Task Update(Feature feature);
+		Task Delete(int id);
 	}
 }

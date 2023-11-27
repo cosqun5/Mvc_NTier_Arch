@@ -20,6 +20,11 @@ namespace Business
 		{
 			services.AddAutoMapper(Assembly.GetExecutingAssembly());
 			services.AddScoped<IAboutService, AboutService>();
+			services.AddScoped<IEducationService, EducationService>();
+			services.AddScoped<IExperienceService, ExperienceService>();
+			services.AddScoped<ICategoryService, CategoryService>();
+			services.AddScoped<IFeatureService, FeatureService>();
+			services.AddScoped<ILanguageService, LanguageService>();
 
 			return services;
 		}

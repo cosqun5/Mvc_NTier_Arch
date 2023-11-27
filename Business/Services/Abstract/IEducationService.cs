@@ -1,5 +1,4 @@
 ﻿using Entities.Concrate;
-using Entities.ViewModels.Educations;
 using System;
 using System.Collections.Generic;
 using System.Linq;

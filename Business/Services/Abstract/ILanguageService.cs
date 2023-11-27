@@ -1,4 +1,4 @@
-﻿using Entities.ViewModels.Languages;
+﻿using Entities.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +9,10 @@ namespace Business.Services.Abstract
 {
 	public interface ILanguageService
 	{
-		//Task<List<LanguageGetVM>> GetAll();
-		//Task AddAsync(LanguageCreateVM creatVM);
-		//Task DeleteAsync(int id);
-		//Task UpdateAsync(LanguageUpdateVM updateVM);
+		Task<List<Language>> GetList();
+		Task<Language> GetById(int id);
+		Task Insert(Language language);
+		Task Update(Language language);
+		Task Delete(int id);
 	}
 }

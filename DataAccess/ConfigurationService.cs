@@ -27,12 +27,12 @@ namespace DataAccess
 				.AddEntityFrameworkStores<AppDbContext>();
 			services.AddScoped<IAboutRepository, AboutRepository>();
 			//services.AddScoped<IContactRepository, ContactRepository>();
-			//services.AddScoped<ICategoryRepository, CategoryRepository>();
-			//services.AddScoped<IExperienceRepository, ExperienceRepository>();
+			services.AddScoped<ICategoryRepository, CategoryRepository>();
+			services.AddScoped<IExperienceRepository, ExperienceRepository>();
 			//services.AddScoped<IPortfolioRepository, PortfolioRepository>();
-			//services.AddScoped<IEducationRepository, EducationRepository>();
-			//services.AddScoped<IFeatureRepository, FeatureRepository>();
-			//services.AddScoped<ILanguageRepository, LanguageRepository>();
+			services.AddScoped<IEducationRepository, EducationRepository>();
+			services.AddScoped<IFeatureRepository, FeatureRepository>();
+			services.AddScoped<ILanguageRepository, LanguageRepository>();
 			//services.AddScoped<IPortfolioImageRepository, PortfolioImageRepository>();
 			//services.AddScoped<IServiceRepository, ServiceRepository>();
 			//services.AddScoped<ISkillsRepository, SkillsRepository>();

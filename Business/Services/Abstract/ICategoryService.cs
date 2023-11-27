@@ -1,6 +1,5 @@
 ﻿using Entities.Concrate;
 using Entities.ViewModels.Abouts;
-using Entities.ViewModels.Categorys;
 
 
 namespace Business.Services.Abstract
