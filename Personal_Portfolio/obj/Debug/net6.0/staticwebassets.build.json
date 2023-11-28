@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "anuGxKWN3GEaBg35ywjAOai6X8HopxbIKqoFncL7cgU=",
+  "Hash": "NTUQ4lbN4f2BwF9VzN+gkrJBQjNhkJPqIi92nXKlFSc=",
   "Source": "Personal_Portfolio",
   "BasePath": "_content/Personal_Portfolio",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\cf73379c-75bd-4d2b-b40d-43fa882373fc.jpg",
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\e7760d57-7935-4cdd-aff8-8e47feb3d35a.jpg",
       "SourceId": "Personal_Portfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\",
       "BasePath": "_content/Personal_Portfolio",
-      "RelativePath": "assets/img/cf73379c-75bd-4d2b-b40d-43fa882373fc.jpg",
+      "RelativePath": "assets/img/e7760d57-7935-4cdd-aff8-8e47feb3d35a.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,24 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\cf73379c-75bd-4d2b-b40d-43fa882373fc.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\ec5968b0-f94e-4811-8121-24dd9bc5cb51.jpg",
-      "SourceId": "Personal_Portfolio",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\",
-      "BasePath": "_content/Personal_Portfolio",
-      "RelativePath": "assets/img/ec5968b0-f94e-4811-8121-24dd9bc5cb51.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\ec5968b0-f94e-4811-8121-24dd9bc5cb51.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\e7760d57-7935-4cdd-aff8-8e47feb3d35a.jpg"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\darkpan-1.0.0\\404.html",

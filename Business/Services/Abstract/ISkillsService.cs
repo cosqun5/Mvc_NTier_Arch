@@ -1,4 +1,4 @@
-﻿using Entities.ViewModels.Skillses;
+﻿using Entities.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +9,10 @@ namespace Business.Services.Abstract
 {
 	public interface ISkillsService
 	{
-		//Task<List<SkillsGetVM>> GetAll();
-		//Task AddAsync(SkillsCreateVM creatVM);
-		//Task DeleteAsync(int id);
-		//Task UpdateAsync(SkillsUpdateVM updateVM);
+		Task<List<Skills>> GetList();
+		Task<Skills> GetById(int id);
+		Task Insert(Skills skills);
+		Task Update(Skills skills);
+		Task Delete(int id);
 	}
 }

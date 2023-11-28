@@ -21,7 +21,6 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 		}
 		public IActionResult Create()
 		{
-
 			return View();
 		}
 		[HttpPost]
@@ -33,31 +32,23 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 		public async Task<IActionResult> Delete(int id)
 		{
 			await _categoryService.Delete(id);
-
 			return RedirectToAction("Index");
 		}
 		[HttpGet]
 		public async Task<IActionResult> Update(int id)
 		{
 			if (!ModelState.IsValid) return View();
-			Category Category = await _categoryService.GetById(id);
-			if (Category == null)
+			Category category = await _categoryService.GetById(id);
+			if (category == null)
 			{
 				return View("Error");
 			}
-			Category update = new Category
-			{
-				Id = id,
-				Name = Category.Name,
-
-			};
-			return View(update);
+			return View(category);
 		}
 		[HttpPost]
 		public async Task<IActionResult> Update(Category update)
 		{
 			await _categoryService.Update(update);
-
 			return RedirectToAction("Index");
 		}
 	}

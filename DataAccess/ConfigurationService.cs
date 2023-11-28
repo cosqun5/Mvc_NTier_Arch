@@ -26,16 +26,16 @@ namespace DataAccess
 			services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
 				.AddEntityFrameworkStores<AppDbContext>();
 			services.AddScoped<IAboutRepository, AboutRepository>();
-			//services.AddScoped<IContactRepository, ContactRepository>();
+			services.AddScoped<IContactRepository, ContactRepository>();
 			services.AddScoped<ICategoryRepository, CategoryRepository>();
 			services.AddScoped<IExperienceRepository, ExperienceRepository>();
-			//services.AddScoped<IPortfolioRepository, PortfolioRepository>();
+			services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 			services.AddScoped<IEducationRepository, EducationRepository>();
 			services.AddScoped<IFeatureRepository, FeatureRepository>();
 			services.AddScoped<ILanguageRepository, LanguageRepository>();
-			//services.AddScoped<IPortfolioImageRepository, PortfolioImageRepository>();
-			//services.AddScoped<IServiceRepository, ServiceRepository>();
-			//services.AddScoped<ISkillsRepository, SkillsRepository>();
+			services.AddScoped<IPortfolioImageRepository, PortfolioImageRepository>();
+			services.AddScoped<IServiceRepository, ServiceRepository>();
+			services.AddScoped<ISkillsRepository, SkillsRepository>();
 			return services;
 		}
 	}

@@ -47,16 +47,7 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 			{
 				return View("Error");
 			}
-			Education update = new Education
-			{
-				Id = id,
-				Name = education.Name,
-				Description = education.Description,
-				Start = education.Start,
-				End = education.End,
-
-			};
-			return View(update);
+			return View(education);
 		}
 		[HttpPost]
 		public async Task<IActionResult> Update(Education update)

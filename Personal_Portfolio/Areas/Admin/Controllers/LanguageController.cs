@@ -46,15 +46,8 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 			{
 				return View("Error");
 			}
-			Language update = new Language
-			{
-				Id = id,
-				Name = language.Name,
-				Level = language.Level,
-				Percent=language.Percent,
 
-			};
-			return View(update);
+			return View(language);
 		}
 		[HttpPost]
 		public async Task<IActionResult> Update(Language update)

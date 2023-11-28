@@ -25,6 +25,11 @@ namespace Business
 			services.AddScoped<ICategoryService, CategoryService>();
 			services.AddScoped<IFeatureService, FeatureService>();
 			services.AddScoped<ILanguageService, LanguageService>();
+			services.AddScoped<IServiceService, ServicesService>();
+			services.AddScoped<ISkillsService, SkillsService>();
+			services.AddScoped<IPortfolioService, PortfolioService>();
+			services.AddScoped<IContactService, ContactService>();
+
 
 			return services;
 		}

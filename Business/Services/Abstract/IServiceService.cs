@@ -1,4 +1,4 @@
-﻿using Entities.ViewModels.Services;
+﻿using Entities.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +9,10 @@ namespace Business.Services.Abstract
 {
 	public interface IServiceService
 	{
-		//Task<List<ServiceGetVM>> GetAll();
-		//Task AddAsync(ServiceCreateVM creatVM);
-		//Task DeleteAsync(int id);
-		//Task UpdateAsync(ServiceUpdateVM updateVM);
+		Task<List<Service>> GetList();
+		Task<Service> GetById(int id);
+		Task Insert(Service service);
+		Task Update(Service service);
+		Task Delete(int id);
 	}
 }

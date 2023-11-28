@@ -1,0 +1,65 @@
+﻿@using Entities.Concrate;
+@using Entities.ViewModels.Portfolios
+@model PortfolioUpdateVM
+@{
+	ViewData["Title"] = "Update";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row g-4">
+	<div class="col-sm-12 col-xl-6 mt-5" style="margin:20px;">
+		<div class="bg-secondary rounded h-100 p-4">
+			<h6 class="mb-4">Basic Form</h6>
+			<form method="post" enctype="multipart/form-data">
+				<div class="mb-3">
+					<label asp-for="Name" class="form-label"></label>
+					<input asp-for="Name" class="form-control">
+					<span asp-validation-for="Name"></span>
+
+				</div>
+				<div class="mb-3">
+					<label asp-for="Description" class="form-label"></label>
+					<input asp-for="Description" class="form-control">
+					<span asp-validation-for="Description"></span>
+
+				</div>
+				<div class="mb-3">
+					<label asp-for="Photos" class="form-label"></label>
+					<input asp-for="Photos" class="form-control">
+					<span asp-validation-for="Photos"></span>
+
+				</div>
+				<div class="mb-3">
+					<label asp-for="Price" class="form-label"></label>
+					<input asp-for="Price" class="form-control">
+					<span asp-validation-for="Price"></span>
+
+				</div>
+				<div class="mb-3">
+					<label asp-for="IsDeleted" class="form-label"></label>
+					<input asp-for="IsDeleted" class="form-control">
+					<span asp-validation-for="IsDeleted"></span>
+
+				</div>
+				<div class="mb-3">
+					<label asp-for="CategoryId" class="form-label"></label>
+					<select asp-for="CategoryId" class="form-control">
+						@foreach (Category category in Model.Categories)
+						{
+							<option value="@category.Id">
+								@category.Name
+							</option>
+						}
+					</select>
+					<span asp-validation-for="CategoryId"></span>
+				</div>
+
+
+				<button type="submit" class="btn btn-primary">Create</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+

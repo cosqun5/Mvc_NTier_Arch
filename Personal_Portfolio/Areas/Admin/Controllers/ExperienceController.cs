@@ -45,16 +45,16 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 			{
 				return View("Error");
 			}
-			Experience update = new Experience
-			{
-				Id = id,
-				Name = experience.Name,
-				Description = experience.Description,
-				Start = experience.Start,
-				End = experience.End,
+			//Experience update = new Experience
+			//{
+			//	Id = id,
+			//	Name = experience.Name,
+			//	Description = experience.Description,
+			//	Start = experience.Start,
+			//	End = experience.End,
 
-			};
-			return View(update);
+			//};
+			return View(experience);
 		}
 		[HttpPost]
 		public async Task<IActionResult> Update(Experience update)

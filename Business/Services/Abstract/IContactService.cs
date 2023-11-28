@@ -1,4 +1,4 @@
-﻿using Entities.ViewModels.Contact;
+﻿using Entities.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,8 @@ namespace Business.Services.Abstract
 {
 	public interface IContactService
 	{
-		Task<List<ContactGetVM>> GetAll();
-		Task DeleteAsync(int id);
+		Task<List<Contact>> GetList();
+		Task<Contact> GetById(int id);
+		Task Delete(int id);
 	}
 }

@@ -1,0 +1,46 @@
+﻿@using Entities.Concrate
+@model List<Service>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+	var count = 1;
+}
+
+<div class="col-sm-12 col-xl-12">
+	<div class="bg-secondary rounded h-100 p-4">
+		<h6 class="mb-4">Service</h6>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Name</th>
+					<th scope="col">Description</th>
+					<th scope="col">Icon</th>
+					<th scope="col">Update</th>
+					<th scope="col">Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+
+					<tr>
+						<th scope="row">@count</th>
+						<td>@item.Name</td>
+						<td>@item.Description</td>
+						<td>@item.Icon</td>
+						<td> <a type="button" class="btn btn-outline-success m-2" asp-area="Admin" asp-action="Update" asp-controller="Service" asp-route-Id="@item.Id">Update</a></td>
+						<td> <a type="button" class="btn btn-outline-primary m-2" asp-area="Admin" asp-action="Delete" asp-controller="Service" asp-route-Id="@item.Id">Delete</a></td>
+
+					</tr>
+					count++;
+				}
+				<a class="btn btn-outline-success" asp-area="Admin" asp-controller="Service" asp-action="Create">Create</a>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+
+

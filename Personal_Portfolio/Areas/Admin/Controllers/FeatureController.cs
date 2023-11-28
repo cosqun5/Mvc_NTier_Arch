@@ -47,15 +47,8 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 			{
 				return View("Error");
 			}
-			Feature update = new Feature
-			{
-				Id = id,
-				Title= feature.Title,
-				Name = feature.Name,
-				Description = feature.Description,
 
-			};
-			return View(update);
+			return View(feature);
 		}
 		[HttpPost]
 		public async Task<IActionResult> Update(Feature update)

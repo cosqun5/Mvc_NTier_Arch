@@ -19,7 +19,24 @@ namespace Core.DataAccess.Repositories.Concrate.EFCore
 			_context = context;
 			_dbSet = _context.Set<TEntity>();
 		}
+		public Task<List<TEntity>> GetList(Expression<Func<TEntity, bool>> filter = null, params string[] includes)
+		{
+			IQueryable<TEntity> query = GetQuery(includes);
+			return filter == null
+				? query.ToListAsync()
+				: query.Where(filter).ToListAsync();
+		}
 
+		private IQueryable<TEntity> GetQuery(string[] includes)
+		{
+			IQueryable<TEntity> query = _dbSet;
+			foreach (var item in includes)
+			{
+				query = query.Include(item);
+			}
+
+			return query;
+		}
 		public async Task Insert(TEntity entity)
 		{
 			await _dbSet.AddAsync(entity);
@@ -30,13 +47,6 @@ namespace Core.DataAccess.Repositories.Concrate.EFCore
 			_dbSet.Remove(entity);
 		}
 
-		public Task<List<TEntity>> GetList(Expression<Func<TEntity, bool>> filter = null, params string[] includes)
-		{
-			IQueryable<TEntity> query = GetQuery(includes);
-			return filter == null
-				? query.ToListAsync()
-				: query.Where(filter).ToListAsync();
-		}
 
 		public async Task<TEntity> GetById(int id)
 		{
@@ -58,16 +68,6 @@ namespace Core.DataAccess.Repositories.Concrate.EFCore
 			_dbSet.Update(entity);
 		}
 
-		private IQueryable<TEntity> GetQuery(string[] includes)
-		{
-			IQueryable<TEntity> query = _dbSet;
-			foreach (var item in includes)
-			{
-				query = query.Include(item);
-			}
-
-			return query;
-		}
 
 		
 	}
