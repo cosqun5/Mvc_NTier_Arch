@@ -1,0 +1,26 @@
+﻿@using Entities.Concrate
+@model List<Service>
+@{
+	Layout = null;
+}
+
+<div class="boxes">
+	<h3 class="subtitle">Services</h3>
+	<div class="row vertical-line">
+		<!-- Item 01 -->
+		@foreach (var item in Model)
+		{
+			<div class="col-md-6">
+				<div class="services-box">
+					<i class="bi bi-laptop services-icon"></i>
+					<div class="services-content">
+						<h6 class="services-head">@item.Name</h6>
+						<p class="services-description mb-0">@item.Description</p>
+					</div>
+				</div>
+			</div>
+
+		}
+
+	</div>
+</div>

@@ -1,0 +1,55 @@
+﻿@using Entities.Concrate
+@model List<About>
+@{
+	Layout = null;
+}
+<!-- Introducce Me -->
+@foreach (var item in Model)
+{
+
+	<div class="about-boxes">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="about-img">
+					<img src="~/assets/img/@item.ImageUrl" alt="/">
+					<div class="border-img"></div>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<div class="about-description">
+					<h3 class="mb-3">@item.Title</h3>
+					<p class="about-text">@item.Description</p>
+				</div>
+				<!-- Personal Info -->
+				<div class="row">
+					<div class="col-lg-6">
+						<ul class="list-unstyled personal-info">
+							<li>
+								Email : <small>@item.Email</small>
+							</li>
+							<li>
+								Phone : <small>@item.Phone</small>
+							</li>
+							<li>
+								City : <small>@item.City</small>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<ul class="list-unstyled personal-info">
+							<li>
+								Age : <small>@item.Age</small>
+							</li>
+							<li>
+								Degree : <small>@item.Degree</small>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12">
+						<a href="#contact" class="to-contact primary-button mt-2">Hire me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+}

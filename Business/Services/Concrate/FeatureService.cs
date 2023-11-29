@@ -14,6 +14,12 @@ namespace Business.Services.Concrate
 	public class FeatureService : IFeatureService
 	{
 		private readonly IFeatureRepository _repository;
+
+		public FeatureService(IFeatureRepository repository)
+		{
+			_repository = repository;
+		}
+
 		public async Task Delete(int id)
 		{
 			Feature feature =  await _repository.GetById(id);

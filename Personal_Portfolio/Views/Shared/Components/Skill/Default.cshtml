@@ -1,0 +1,25 @@
+﻿@using Entities.Concrate
+@model List<Skills>
+@{
+	Layout = null;
+}
+<div class="col-lg-6">
+	<h3 class="subtitle">Design Skills</h3>
+	<div id="skills">
+		@foreach (var item in Model)
+		{
+
+			<div class="col-lg-12 skill-box">
+				<div class="skill-text">
+					<div class="skillbar-title">@item.Name</div>
+					<div class="skill-bar-percent"><span data-from="0" data-to="@item.Percent" data-speed="4000">@item.Percent</span>%</div>
+				</div>
+				<div class="skillbar clearfix" data-percent="@item.Percent%">
+					<div class="skillbar-bar"></div>
+				</div>
+			</div>
+		}
+		<!-- Item 01 -->
+
+	</div>
+</div>

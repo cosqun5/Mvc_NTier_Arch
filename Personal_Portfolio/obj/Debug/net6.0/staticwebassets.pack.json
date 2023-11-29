@@ -1,8 +1,212 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\e7760d57-7935-4cdd-aff8-8e47feb3d35a.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\e7760d57-7935-4cdd-aff8-8e47feb3d35a.jpg"
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\colors\\golden.css",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\colors\\golden.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\css\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\css\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\css\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\css\\jquery.mCustomScrollbar.css",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\css\\jquery.mCustomScrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\css\\owl.video.play.html",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\css\\owl.video.play.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\fonts\\bootstrap-icons50ab.woff",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\fonts\\bootstrap-icons50ab.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\fonts\\bootstrap-icons50ab.woff2",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\fonts\\bootstrap-icons50ab.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\blog-header-img.html",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\blog-header-img.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\blog-img-03.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\blog-img-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\blog-img-04.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\blog-img-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\blog-img-05.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\blog-img-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\client-01.png",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\client-01.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\client-02.png",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\client-02.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\client-03.png",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\client-03.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\location-map.png",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\location-map.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\responsive-dark.png",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\responsive-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\about-img.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\about-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-item1.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-item2.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-item3.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-item3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-item4.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-item4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-single.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\blog-single.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item1.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item2.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item3.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item4.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item5.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item6.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\portfolio-item6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\img\\webdesigner\\profile-img.jpg",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\img\\webdesigner\\profile-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\js\\arshia.js",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\js\\arshia.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\js\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\js\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\js\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\js\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\js\\jquery.countTo.js",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\js\\jquery.countTo.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\cloudflare-static\\email-decode.min.js",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\cloudflare-static\\email-decode.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\portfolio-01-dark.html",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\portfolio-01-dark.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\portfolio-02-dark.html",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\portfolio-02-dark.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\portfolio-03-dark.html",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\portfolio-03-dark.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\webdesigner-blog-singel-dark.html",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\webdesigner-blog-singel-dark.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\arshia\\arshia-plus\\webdesigner-dark.html",
+      "PackagePath": "staticwebassets\\arshia\\arshia-plus\\webdesigner-dark.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\2e93b9f2-a9c8-4a02-97db-631e205f39f8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\2e93b9f2-a9c8-4a02-97db-631e205f39f8.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\5a879831-9898-4881-b869-45130714d7b9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\5a879831-9898-4881-b869-45130714d7b9.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\5be8dd82-2618-4961-9c11-c6e87fe75b3b.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\5be8dd82-2618-4961-9c11-c6e87fe75b3b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\c655f9aa-c5cc-4d3e-b09a-a9f19578d0d0.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c655f9aa-c5cc-4d3e-b09a-a9f19578d0d0.png"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\darkpan-1.0.0\\404.html",

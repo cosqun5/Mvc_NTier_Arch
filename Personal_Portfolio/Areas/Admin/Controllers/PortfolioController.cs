@@ -52,7 +52,7 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 				Id = portfolio.Id,
 				Name = portfolio.Name,
 				Description = portfolio.Description,
-				IsDeleted = portfolio.IsDeleted,
+				IsDeleted = (bool)portfolio.IsDeleted,
 				Price = (double)portfolio.Price,
 				CategoryId = (int)portfolio.CategoryId,
 				Categories = await _categoryService.GetList()

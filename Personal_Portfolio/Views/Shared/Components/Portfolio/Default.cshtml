@@ -1,0 +1,32 @@
+﻿@using Entities.Concrate
+@model List<Portfolio>
+@{
+	Layout = null;
+}
+
+<div class="portfolio-items border-line-v row">
+
+
+	<!-- Item 03 -->
+	@foreach (var item in Model)
+	{
+
+		<div class="col-md-6 col-lg-4 portfolio-item  @item.Category.Name.ToLower().Trim()">
+			<div class="portfolio-box">
+				<div class="portfolio-image">
+					<img src="~/assets/img/@item.PortfolioImages.Where(i=>i.IsActive).FirstOrDefault().Path" alt="/">
+					<div class="portfolio-icon">
+						<a href="portfolio-01-dark.html" class="ajax-page-load">
+							<i class="bi bi-file-earmark-text"></i>
+						</a>
+					</div>
+				</div>
+				<div class="portfolio-content">
+					<h6 class="blog-header">@item.Name</h6>
+				</div>
+			</div>
+		</div>
+	}
+	<!-- Item 04 -->
+
+</div>

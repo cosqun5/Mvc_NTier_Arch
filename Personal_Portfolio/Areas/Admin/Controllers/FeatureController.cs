@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
-		[Area("Admin")]
+	[Area("Admin")]
 	public class FeatureController : Controller
 	{
 		private readonly IFeatureService _featureService;
@@ -15,7 +15,7 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 			_featureService = featureService;
 		}
 
-		public async Task< IActionResult> Index()
+		public async Task<IActionResult> Index()
 		{
 			var result = await _featureService.GetList();
 			return View(result);
