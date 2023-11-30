@@ -11,6 +11,7 @@ namespace Business.Services.Abstract
 	{
 		Task<List<Contact>> GetList();
 		Task<Contact> GetById(int id);
+		Task Insert(Contact contact);
 		Task Delete(int id);
 	}
 }

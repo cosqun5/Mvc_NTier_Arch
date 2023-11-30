@@ -768,12 +768,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\arshia\arshia-plus\webdesigner-dark.html))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\2e93b9f2-a9c8-4a02-97db-631e205f39f8.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\2cb49ae8-0172-4d25-b3b9-9f03ba8bf2bf.png))">
       <SourceType>Package</SourceType>
       <SourceId>Personal_Portfolio</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Personal_Portfolio</BasePath>
-      <RelativePath>assets/img/2e93b9f2-a9c8-4a02-97db-631e205f39f8.png</RelativePath>
+      <RelativePath>assets/img/2cb49ae8-0172-4d25-b3b9-9f03ba8bf2bf.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -782,14 +782,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\2e93b9f2-a9c8-4a02-97db-631e205f39f8.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\2cb49ae8-0172-4d25-b3b9-9f03ba8bf2bf.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\5a879831-9898-4881-b869-45130714d7b9.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\49262be0-9ab9-4d76-a0b1-e03036ea241a.png))">
       <SourceType>Package</SourceType>
       <SourceId>Personal_Portfolio</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Personal_Portfolio</BasePath>
-      <RelativePath>assets/img/5a879831-9898-4881-b869-45130714d7b9.png</RelativePath>
+      <RelativePath>assets/img/49262be0-9ab9-4d76-a0b1-e03036ea241a.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -798,7 +798,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\5a879831-9898-4881-b869-45130714d7b9.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\49262be0-9ab9-4d76-a0b1-e03036ea241a.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\5be8dd82-2618-4961-9c11-c6e87fe75b3b.jpg))">
       <SourceType>Package</SourceType>
@@ -816,12 +816,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\5be8dd82-2618-4961-9c11-c6e87fe75b3b.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\c655f9aa-c5cc-4d3e-b09a-a9f19578d0d0.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\9c8b95ce-636c-41fb-93cc-2cb3acfe7a25.png))">
       <SourceType>Package</SourceType>
       <SourceId>Personal_Portfolio</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Personal_Portfolio</BasePath>
-      <RelativePath>assets/img/c655f9aa-c5cc-4d3e-b09a-a9f19578d0d0.png</RelativePath>
+      <RelativePath>assets/img/9c8b95ce-636c-41fb-93cc-2cb3acfe7a25.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -830,7 +830,23 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\c655f9aa-c5cc-4d3e-b09a-a9f19578d0d0.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\9c8b95ce-636c-41fb-93cc-2cb3acfe7a25.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\da557f2a-050a-43ee-ba57-b8c5b3470f39.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Personal_Portfolio</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Personal_Portfolio</BasePath>
+      <RelativePath>assets/img/da557f2a-050a-43ee-ba57-b8c5b3470f39.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\da557f2a-050a-43ee-ba57-b8c5b3470f39.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\darkpan-1.0.0\404.html))">
       <SourceType>Package</SourceType>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,9 @@ namespace Entities.Concrate
 		public string City { get; set; }
 		public string Degree { get; set; }
 		public int Age { get; set; }
+		public ContactType ContactType { get; set; }
 
 
-    }
+
+	}
 }

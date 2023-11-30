@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GT7p681+dG4TMG/CJPKqKjRb87WxTZjOv8Oxpu7P0RU=",
+  "Hash": "yvhx6Qr7ic3L0izzNxu7S9xxV6LYKchIkAWG1g78ZDc=",
   "Source": "Personal_Portfolio",
   "BasePath": "_content/Personal_Portfolio",
   "Mode": "Default",
@@ -833,12 +833,12 @@
       "OriginalItemSpec": "wwwroot\\arshia\\arshia-plus\\webdesigner-dark.html"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\2e93b9f2-a9c8-4a02-97db-631e205f39f8.png",
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\2cb49ae8-0172-4d25-b3b9-9f03ba8bf2bf.png",
       "SourceId": "Personal_Portfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\",
       "BasePath": "_content/Personal_Portfolio",
-      "RelativePath": "assets/img/2e93b9f2-a9c8-4a02-97db-631e205f39f8.png",
+      "RelativePath": "assets/img/2cb49ae8-0172-4d25-b3b9-9f03ba8bf2bf.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -847,15 +847,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\2e93b9f2-a9c8-4a02-97db-631e205f39f8.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\2cb49ae8-0172-4d25-b3b9-9f03ba8bf2bf.png"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\5a879831-9898-4881-b869-45130714d7b9.png",
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\49262be0-9ab9-4d76-a0b1-e03036ea241a.png",
       "SourceId": "Personal_Portfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\",
       "BasePath": "_content/Personal_Portfolio",
-      "RelativePath": "assets/img/5a879831-9898-4881-b869-45130714d7b9.png",
+      "RelativePath": "assets/img/49262be0-9ab9-4d76-a0b1-e03036ea241a.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -864,7 +864,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\5a879831-9898-4881-b869-45130714d7b9.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\49262be0-9ab9-4d76-a0b1-e03036ea241a.png"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\5be8dd82-2618-4961-9c11-c6e87fe75b3b.jpg",
@@ -884,12 +884,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\5be8dd82-2618-4961-9c11-c6e87fe75b3b.jpg"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\c655f9aa-c5cc-4d3e-b09a-a9f19578d0d0.png",
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\9c8b95ce-636c-41fb-93cc-2cb3acfe7a25.png",
       "SourceId": "Personal_Portfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\",
       "BasePath": "_content/Personal_Portfolio",
-      "RelativePath": "assets/img/c655f9aa-c5cc-4d3e-b09a-a9f19578d0d0.png",
+      "RelativePath": "assets/img/9c8b95ce-636c-41fb-93cc-2cb3acfe7a25.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -898,7 +898,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\c655f9aa-c5cc-4d3e-b09a-a9f19578d0d0.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\9c8b95ce-636c-41fb-93cc-2cb3acfe7a25.png"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\da557f2a-050a-43ee-ba57-b8c5b3470f39.png",
+      "SourceId": "Personal_Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\",
+      "BasePath": "_content/Personal_Portfolio",
+      "RelativePath": "assets/img/da557f2a-050a-43ee-ba57-b8c5b3470f39.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\da557f2a-050a-43ee-ba57-b8c5b3470f39.png"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\darkpan-1.0.0\\404.html",

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,8 @@ namespace Entities.Concrate
 		
 		public string Email { get; set; }
 		public string Phone { get; set; }
-		public string Message { get; set; }	
-	
-    }
+		public string Message { get; set; }
+		public DateTime Date { get; set; }
+
+	}
 }

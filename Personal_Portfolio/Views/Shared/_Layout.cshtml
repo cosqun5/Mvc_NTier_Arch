@@ -112,12 +112,12 @@
 						<span>works</span>
 					</a>
 				</li>
-				<li class="list-group-item">
+				@*<li class="list-group-item">
 					<a href="#blog">
 						<i class="bi bi-book"></i>
 						<span>blog</span>
 					</a>
-				</li>
+				</li>*@
 				<li class="list-group-item">
 					<a href="#contact">
 						<i class="bi bi-geo-alt"></i>
@@ -150,7 +150,7 @@
 
 
 
-		<!--  Blog Start  -->
+	@*	<!--  Blog Start  -->
 		<section id="blog" class="section blog">
 			<div class="container">
 				<h3 class="subtitle">Latest News</h3>
@@ -232,98 +232,8 @@
 				</div>
 			</div>
 		</section>
-		<!--  Blog End  -->
-		<!-- Contact Start -->
-		<section id="contact" class="section contact w-100">
-			<div class="container">
-				<h3 class="subtitle">Get in Touch</h3>
-				<!-- Map -->
-				<div class="row mt-5">
-					<div class="col-lg-12"><div id="my-map" data-location-lat="43.053454" data-location-lng="-76.144508" data-location-icon="~/arshia/arshia-plus/assets/img/location-map.png"></div></div>
-				</div>
-				<div class="row mt-4">
-					<!-- Address Info -->
-					<div class="col-12 col-xl-5">
-						<div class="row">
-							<!--  Item 01 -->
-							<div class="col-lg-12">
-								<div class="info-box">
-									<div class="item-icon">
-										<i class="bi bi-envelope-open"></i>
-									</div>
-									<div class="info-text">
-										<h5>Mail Me</h5>
-										<small><a href="https://retrina.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0d5ddd1d9dcf0d5c8d1ddc0dcd59ed3dfdd">[email&#160;protected]</a></small>
-									</div>
-								</div>
-							</div>
-							<!--  Item 02 -->
-							<div class="col-lg-12">
-								<div class="info-box">
-									<div class="item-icon">
-										<i class="bi bi-telephone"></i>
-									</div>
-									<div class="info-text">
-										<h5>Call Us On</h5>
-										<small>+123 456 7890</small>
-									</div>
-								</div>
-							</div>
-							<!--  Item 03 -->
-							<div class="col-lg-12">
-								<div class="info-box">
-									<div class="item-icon">
-										<i class="bi bi-map"></i>
-									</div>
-									<div class="info-text">
-										<h5>Visit office</h5>
-										<small>24 Street, New York, United State.</small>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Contact Form -->
-					<div class="col-12 col-xl-7">
-						<div class="contact-box">
-							<div class="contact-form">
-								<form id="contactForm">
-									<div class="row">
-										<div class="col-lg-12 form-item">
-											<div class="form-group">
-												<input name="name" id="name" type="text" class="form-control" placeholder="Complate Name*" required>
-											</div>
-										</div>
-										<div class="col-lg-12 form-item">
-											<div class="form-group">
-												<input name="email" id="email" type="email" class="form-control" placeholder="Email Address*" required>
-											</div>
-										</div>
-										<div class="col-lg-12 form-item">
-											<div class="form-group">
-												<input name="subject" id="subject" type="tel" class="form-control" placeholder="Phone number*" required>
-											</div>
-										</div>
-										<div class="col-12 form-item">
-											<div class="form-group">
-												<textarea name="comments" id="comments" rows="3" class="form-control textarea" placeholder="Your message..."></textarea>
-											</div>
-										</div>
-										<div class="col-sm-12 text-left">
-											<div class="pill-btn mt-4 mb-3">
-												<button type="submit" class="secondary-button"> Send Message </button>
-											</div>
+		<!--  Blog End  -->*@
 
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--  Contact End  -->
 
 	</main>
 	<!--  Main End  -->
@@ -413,6 +323,35 @@
 	<div class="m-magic-cursor mmc-inner"></div>
 	<!-- Mouase Magic Cursor End -->
 	<!--  JavaScripts  -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script>
+		$(function () {
+			$('#contactForm').submit(function (e) {
+				e.preventDefault();
+				var form = $(this);
+				var url = form.attr('action');
+				$.ajax({
+					type: 'POST',
+					url: url,
+					data: form.serialize(),
+					dataType: 'json',
+					success: function (data) {
+						if (data.success) {
+							Swal.fire('Təşəkkürlər', data.message, 'success');
+							// Formun içini boşaltmaq
+							form[0].reset();
+						} else {
+							Swal.fire('Xəta', 'Mesajınız göndərilmədi.', 'error');
+						}
+					},
+					error: function () {
+						Swal.fire('Xəta', 'Mesajınız göndərilmədi.', 'error');
+					}
+				});
+			});
+		});
+	</script>
 	<!--  Jquery 3.4.1  -->
 	<script src="~/arshia/arshia-plus/cloudflare-static/email-decode.min.js"></script>
 	<script data-cfasync="false" src="~/arshia/arshia-plus/cloudflare-static/email-decode.min.js"></script>
