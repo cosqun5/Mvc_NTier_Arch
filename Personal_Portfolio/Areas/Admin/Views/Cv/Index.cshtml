@@ -1,0 +1,53 @@
+﻿@using Entities.Concrate
+@model List<Cv>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+	var count = 1;
+}
+
+<div class="col-sm-12 col-xl-12">
+	<div class="bg-secondary rounded h-100 p-4">
+		<h6 class="mb-4">Cv</h6>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Name</th>
+					<th scope="col">Cv</th>
+					<th scope="col">Update</th>
+					<th scope="col">Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+
+					<tr>
+						<th scope="row">@count</th>
+						<td>@item.Name</td>
+						<td>
+							@if (item.CVData != null && item.CVData.Length > 0)
+							{
+								var base64String = Convert.ToBase64String(item.CVData);
+								<embed src="data:application/pdf;base64,@base64String" type="application/pdf" width="20%" height="50px" />
+							}
+							else
+							{
+								<span>No CV</span>
+							}
+						</td>
+
+						<td> <a type="button" class="btn btn-outline-primary m-2" asp-area="Admin" asp-action="Delete" asp-controller="Cv" asp-route-Id="@item.Id">Delete</a></td>
+
+					</tr>
+					count++;
+				}
+				<a class="btn btn-outline-success" asp-area="Admin" asp-controller="Cv" asp-action="Create">Create</a>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+								<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>

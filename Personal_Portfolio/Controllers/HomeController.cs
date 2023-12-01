@@ -36,5 +36,28 @@ namespace Personal_Portfolio.Controllers
 			// Mesaj göndərildikdən sonra, səhifə yenilənmədən SweetAlert-i göndər
 			return Json(new { success = true, message = "Mesajınız göndərildi!" });
 		}
+
+		// CV faylının yüklənməsi üçün action metodu
+		public IActionResult DownloadCV()
+		{
+			// Verilənlər bazasından CV məlumatlarını əldə etmək üçün lazım olan əməliyyatları burada yerinə yetirin
+			// Məsələn, _dbContext.CVler.FirstOrDefault() kimi bir əməliyyatla verilənlər bazasından CV obyektini əldə edin
+			// Ardından, CV obyektindən CV faylının məlumatlarını alın
+
+			var cvFromDatabase = _appDbContext.Cvs.FirstOrDefault();
+
+			if (cvFromDatabase == null)
+			{
+				// Əgər CV məlumatları tapılmadısa, 404 Not Found statusu qaytarın
+				return NotFound();
+			}
+
+			byte[] cvFileData = cvFromDatabase.CVData;
+			string cvFileName = "YourCVFileName.pdf"; // CV faylının adı
+
+			// Faylı response-a əlavə edir və göndərir
+			return File(cvFileData, "application/pdf", cvFileName);
+		}
+
 	}
 }

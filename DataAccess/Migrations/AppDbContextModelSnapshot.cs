@@ -118,6 +118,27 @@ namespace DataAccess.Migrations
                     b.ToTable("Contacts");
                 });
 
+            modelBuilder.Entity("Entities.Concrate.Cv", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<byte[]>("CVData")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cvs");
+                });
+
             modelBuilder.Entity("Entities.Concrate.Education", b =>
                 {
                     b.Property<int>("Id")

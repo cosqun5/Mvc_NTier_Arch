@@ -14,7 +14,7 @@
 		<h1 class="mt-1">@item.Name</h1>
 
 	}
-	<a class="download-cv primary-button d-none d-lg-inline-block" href="javascript:void(0);">Download CV</a>
+	<a class="download-cv primary-button d-none d-lg-inline-block" href="javascript:void(0);" onclick="downloadCV()">Download CV</a>
 	<div class="container d-lg-none d-inline-block">
 		<div class="row">
 			<div class="col-12 text-center">
@@ -23,3 +23,22 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	function downloadCV() {
+		// Faylı endirəcək endpoint üçün Controller action metodu
+		var downloadUrl = '/Home/DownloadCV';
+
+		// Fetch istəyi göndərək faylı endirmək
+		fetch(downloadUrl)
+			.then(response => response.blob())
+			.then(blob => {
+				// Faylı endirmək üçün link yaratmaq
+				var link = document.createElement('a');
+				link.href = window.URL.createObjectURL(blob);
+				link.download = 'Joshgun.pdf'; // CV faylının adını təyin edin
+				link.click();
+			})
+			.catch(error => console.error('CV endirilə bilmədi:', error));
+	}
+</script>

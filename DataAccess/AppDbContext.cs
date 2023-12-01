@@ -27,6 +27,7 @@ namespace DataAccess
 		public DbSet<PortfolioImage> PortfolioImages { get; set; }
 		public DbSet<Service> Services { get; set; }
 		public DbSet<Skills> Skilles { get; set; }
+		public DbSet<Cv> Cvs { get; set; }
 
 	}
 }
