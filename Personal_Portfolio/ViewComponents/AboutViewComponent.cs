@@ -3,10 +3,11 @@ using DataAccess;
 using Entities.Concrate;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Personal_Portfolio.ViewModel;
 
 namespace Personal_Portfolio.ViewComponents
 {
-	public class AboutViewComponent:ViewComponent
+	public class AboutViewComponent : ViewComponent
 	{
 		private readonly IAboutService _aboutService;
 

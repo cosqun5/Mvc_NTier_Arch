@@ -22,6 +22,5 @@ namespace Entities.Concrate
 		public ContactType ContactType { get; set; }
 
 
-
-	}
+    }
 }

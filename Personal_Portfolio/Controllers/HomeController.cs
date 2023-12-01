@@ -3,7 +3,6 @@ using DataAccess;
 using Entities.Concrate;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Entities.Enums;
 using Personal_Portfolio.ViewModel;
 
 namespace Personal_Portfolio.Controllers
@@ -29,10 +28,9 @@ namespace Personal_Portfolio.Controllers
 			};
 			return View(homeVM);
 		}
-
 		public async Task<IActionResult> Contact(Contact contact)
 		{
-			contact.Date= Convert.ToDateTime(DateTime.Now.ToShortDateString());
+			contact.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
 			await _contactService.Insert(contact);
 
 			// Mesaj göndərildikdən sonra, səhifə yenilənmədən SweetAlert-i göndər

@@ -112,12 +112,12 @@
 						<span>works</span>
 					</a>
 				</li>
-				@*<li class="list-group-item">
+				<li class="list-group-item">
 					<a href="#blog">
 						<i class="bi bi-book"></i>
 						<span>blog</span>
 					</a>
-				</li>*@
+				</li>
 				<li class="list-group-item">
 					<a href="#contact">
 						<i class="bi bi-geo-alt"></i>
@@ -150,7 +150,7 @@
 
 
 
-	@*	<!--  Blog Start  -->
+		<!--  Blog Start  -->
 		<section id="blog" class="section blog">
 			<div class="container">
 				<h3 class="subtitle">Latest News</h3>
@@ -232,8 +232,8 @@
 				</div>
 			</div>
 		</section>
-		<!--  Blog End  -->*@
-
+		<!--  Blog End  -->
+		@await Component.InvokeAsync("Contact")
 
 	</main>
 	<!--  Main End  -->
@@ -323,6 +323,7 @@
 	<div class="m-magic-cursor mmc-inner"></div>
 	<!-- Mouase Magic Cursor End -->
 	<!--  JavaScripts  -->
+	<!--  Jquery 3.4.1  -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script>
@@ -352,7 +353,6 @@
 			});
 		});
 	</script>
-	<!--  Jquery 3.4.1  -->
 	<script src="~/arshia/arshia-plus/cloudflare-static/email-decode.min.js"></script>
 	<script data-cfasync="false" src="~/arshia/arshia-plus/cloudflare-static/email-decode.min.js"></script>
 	<script src="~/arshia/arshia-plus/assets/js/jquery-3.4.1.min.js"></script>

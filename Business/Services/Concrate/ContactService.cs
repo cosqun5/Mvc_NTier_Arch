@@ -38,7 +38,6 @@ namespace Business.Services.Concrate
 		{
 			return await _repository.GetList();
 		}
-
 		public async Task Insert(Contact contact)
 		{
 			await _repository.Insert(contact);

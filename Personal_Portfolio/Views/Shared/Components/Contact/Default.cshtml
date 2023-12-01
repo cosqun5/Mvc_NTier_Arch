@@ -1,0 +1,111 @@
+﻿@using Entities.Concrate;
+@using Personal_Portfolio.ViewModel
+@model HomeVM
+@{
+    Layout = null;
+}
+<style>
+	.info-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.item-icon,
+	.info-text {
+		text-align: left; /* Opsional, əgər məlumatlarınızın ortasına çatmasını istəyirsinizsə */
+	}
+
+	.item-ico {
+		display: flex;
+		margin-top: 20px;
+	}
+</style>
+<!-- Contact Start -->
+<section id="contact" class="section contact w-100">
+	<div class="container">
+		<h3 class="subtitle">Get in Touch</h3>
+		<!-- Map -->
+		<div class="row mt-5">
+			<div class="col-lg-12"><div id="my-map" data-location-lat="43.053454" data-location-lng="-76.144508" data-location-icon="~/arshia/arshia-plus/assets/img/location-map.png"></div></div>
+		</div>
+		<div class="row mt-4">
+			<!-- Address Info -->
+			<div class="col-12 col-xl-5">
+				<div class="row">
+					<!--  Item 01 -->
+					@foreach (About contact in Model.Abouts)
+					{
+						<div class="col-lg-12">
+							<div class="info-box">
+								@if (!string.IsNullOrEmpty(contact.Email))
+								{
+									<div class="item-ico">
+										<div class="item-icon">
+											<i class="bi bi-envelope-open"></i>
+										</div>
+										<div class="info-text">
+											<h5>Mail Me</h5>
+											<small>@contact.Email</small>
+										</div>
+									</div>
+								}
+								@if (!string.IsNullOrEmpty(contact.Phone))
+								{
+									<div class="item-ico">
+										<div class="item-icon">
+											<i class="bi bi-telephone"></i>
+										</div>
+										<div class="info-text">
+											<h5>Call Us On</h5>
+											<small>@contact.Phone</small>
+										</div>
+									</div>
+								}
+							</div>
+						</div>
+					}
+
+
+				</div>
+			</div>
+			<!-- Contact Form -->
+			<div class="col-12 col-xl-7">
+				<div class="contact-box">
+					<div class="contact-form">
+						<form asp-action="Contact" asp-controller="Home" id="contactForm" method="post">
+							<div class="row">
+								<div class="col-lg-12 form-item">
+									<div class="form-group">
+										<input name="Name" id="name" type="text" class="form-control" placeholder="Complate Name*" required>
+									</div>
+								</div>
+								<div class="col-lg-12 form-item">
+									<div class="form-group">
+										<input name="Email" id="email" type="email" class="form-control" placeholder="Email Address*" required>
+									</div>
+								</div>
+								<div class="col-lg-12 form-item">
+									<div class="form-group">
+										<input name="Phone" id="subject" type="tel" class="form-control" placeholder="Phone number*" required>
+									</div>
+								</div>
+								<div class="col-12 form-item">
+									<div class="form-group">
+										<textarea name="Message" id="Message" rows="3" class="form-control textarea" placeholder="Your message..."></textarea>
+									</div>
+								</div>
+								<div class="col-sm-12 text-left">
+									<div class="pill-btn mt-4 mb-3">
+										<button onclick="sendMessage();" type="submit" class="secondary-button"> Send Message </button>
+									</div>
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--  Contact End  -->
