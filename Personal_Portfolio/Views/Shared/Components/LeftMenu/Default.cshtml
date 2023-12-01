@@ -1,0 +1,25 @@
+﻿@using Personal_Portfolio.ViewModel
+@model MenuVM
+
+<div class="menu-content-align">
+	@foreach (var item in Model.Abouts)
+	{
+		<div class="left-side-image">
+			<img src="~/assets/img/@item.ImageUrl" alt="/">
+		</div>
+
+	}
+	@foreach (var item in Model.Features)
+	{
+		<h1 class="mt-1">@item.Name</h1>
+
+	}
+	<a class="download-cv primary-button d-none d-lg-inline-block" href="javascript:void(0);">Download CV</a>
+	<div class="container d-lg-none d-inline-block">
+		<div class="row">
+			<div class="col-12 text-center">
+				<p class="text-muted mb-0">Web Designer</p>
+			</div>
+		</div>
+	</div>
+</div>

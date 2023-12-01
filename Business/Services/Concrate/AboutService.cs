@@ -63,6 +63,7 @@ namespace Business.Services.Concrate
 			if (await _repository.IsExistsAsync(p => p.Title == creatVM.Title))
 			{
 				throw new AlreadyIsExistsException(ExceptionMessage.EntityAlreadyExists);
+				
 			}
 			string rootpath = Path.Combine(_enviroment.WebRootPath, "assets", "img");
 			string FileName = await creatVM.Photo.SaveAsync(rootpath);

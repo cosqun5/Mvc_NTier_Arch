@@ -1,8 +1,10 @@
 ﻿using Business.Services.Abstract;
+using DataAccess.Repositories.Abstract;
 using Entities.Concrate;
 using Entities.ViewModels.Abouts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Core.Types;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
@@ -10,10 +12,12 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 	public class AboutController : Controller
 	{
 		private readonly IAboutService _aboutService;
+		private readonly IAboutRepository _aboutRepository;
 
-		public AboutController(IAboutService aboutService)
+		public AboutController(IAboutService aboutService, IAboutRepository aboutRepository)
 		{
 			_aboutService = aboutService;
+			_aboutRepository = aboutRepository;
 		}
 
 		public async Task<IActionResult> Index()
@@ -29,6 +33,15 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 		[HttpPost]
 		public async Task< IActionResult> Create(AboutCreatVM creatVM)
 		{
+			if (!ModelState.IsValid)
+			{
+				return View(creatVM);
+			}
+			if (await _aboutRepository.IsExistsAsync(p => p.Title == creatVM.Title))
+			{
+				ModelState.AddModelError("Title", "Bu başlıq artıq mövcuddur.");
+				return View(creatVM);
+			}
 			await _aboutService.Insert(creatVM);
 			return RedirectToAction("Index");
 		}
