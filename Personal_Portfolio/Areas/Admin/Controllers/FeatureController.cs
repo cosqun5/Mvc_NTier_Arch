@@ -1,12 +1,15 @@
 ﻿using Business.Services.Abstract;
 using Business.Services.Concrate;
 using Entities.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class FeatureController : Controller
+    [Authorize(Roles = "Moderator,Admin")]
+
+    public class FeatureController : Controller
 	{
 		private readonly IFeatureService _featureService;
 

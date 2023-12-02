@@ -1,10 +1,13 @@
 ﻿using Business.Services.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class ContactController : Controller
+    [Authorize(Roles = "Moderator,Admin")]
+
+    public class ContactController : Controller
 	{
 		private readonly IContactService _contactService;
 

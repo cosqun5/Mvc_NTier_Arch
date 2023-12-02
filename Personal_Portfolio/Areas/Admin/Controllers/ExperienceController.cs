@@ -1,11 +1,14 @@
 ﻿using Business.Services.Abstract;
 using Entities.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class ExperienceController : Controller
+    [Authorize(Roles = "Moderator,Admin")]
+
+    public class ExperienceController : Controller
 	{
 		private readonly IExperienceService _experienceService;
 

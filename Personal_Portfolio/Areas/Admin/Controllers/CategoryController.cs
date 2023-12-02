@@ -1,11 +1,14 @@
 ﻿using Business.Services.Abstract;
 using Entities.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class CategoryController : Controller
+    [Authorize(Roles = "Moderator,Admin")]
+
+    public class CategoryController : Controller
 	{
 		private readonly ICategoryService _categoryService;
 

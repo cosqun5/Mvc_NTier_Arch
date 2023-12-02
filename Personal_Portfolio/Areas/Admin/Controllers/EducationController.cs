@@ -2,12 +2,15 @@
 using Business.Services.Concrate;
 using Entities.Concrate;
 using Entities.ViewModels.Abouts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class EducationController : Controller
+    [Authorize(Roles = "Moderator,Admin")]
+
+    public class EducationController : Controller
 	{
 		private readonly IEducationService _educationService;
 

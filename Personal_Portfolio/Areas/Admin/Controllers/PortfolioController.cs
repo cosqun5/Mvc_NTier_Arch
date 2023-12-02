@@ -3,13 +3,16 @@ using Business.Services.Concrate;
 using Entities.Concrate;
 using Entities.ViewModels.Abouts;
 using Entities.ViewModels.Portfolios;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class PortfolioController : Controller
+    [Authorize(Roles = "Moderator,Admin")]
+
+    public class PortfolioController : Controller
 	{
 		private readonly IPortfolioService _portfolioService;
 		private readonly ICategoryService _categoryService;

@@ -1,4 +1,5 @@
 ﻿using Entities.Concrate;
+using Entities.Concrate.Auth;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-	public class AppDbContext : IdentityDbContext
+	public class AppDbContext : IdentityDbContext<AppUser,AppRole,string>
 	{
 		public AppDbContext(DbContextOptions<AppDbContext> opt) : base(opt)
 		{

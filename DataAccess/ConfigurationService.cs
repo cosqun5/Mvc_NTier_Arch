@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using DataAccess.Repositories.Abstract;
 using DataAccess.Repositories.Concrate;
 using System.Configuration;
+using Entities.Concrate.Auth;
+using Entities.Concrate;
 
 namespace DataAccess
 {
@@ -23,9 +25,28 @@ namespace DataAccess
 				opt.UseSqlServer(configuration.GetConnectionString("Default"));
 			});
 
-			services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
-				.AddEntityFrameworkStores<AppDbContext>();
-			services.AddScoped<IAboutRepository, AboutRepository>();
+			services.AddIdentity<AppUser, AppRole>()
+                            .AddEntityFrameworkStores<AppDbContext>()
+                            .AddDefaultTokenProviders();
+            services.Configure<IdentityOptions>(opt =>
+            {
+                opt.Password.RequiredLength = 8;
+                opt.Password.RequireNonAlphanumeric = true;
+                opt.Password.RequireDigit = true;
+                opt.Password.RequireLowercase = true;
+                opt.Password.RequireUppercase = true;
+
+                opt.User.RequireUniqueEmail = true;
+
+                opt.Lockout.MaxFailedAccessAttempts = 3;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
+                opt.Lockout.AllowedForNewUsers = true;
+            });
+
+
+
+
+            services.AddScoped<IAboutRepository, AboutRepository>();
 			services.AddScoped<IContactRepository, ContactRepository>();
 			services.AddScoped<ICategoryRepository, CategoryRepository>();
 			services.AddScoped<IExperienceRepository, ExperienceRepository>();

@@ -1,0 +1,48 @@
+﻿@using Personal_Portfolio.Areas.Admin.ViewModels
+@model List<UserViewModel>
+@{
+	ViewData["Title"] = "ViewUsers";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+	var count = 1;
+}
+<div class="col-sm-12 col-xl-12">
+	<div class="bg-secondary rounded h-100 p-4">
+		<h6 class="mb-4">Users</h6>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Username</th>
+					<th scope="col">Role</th>
+					<th scope="col">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+
+					<tr>
+						<th scope="row">@count</th>
+						<td>@item.UserName</td>
+						<td>@item.CurrentRole</td>
+						<td>
+							
+							<div class="nav-item dropdown">
+								<a href="#" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-laptop me-2"></i>Change Role</a>
+								<div class="dropdown-menu bg-transparent border-0">
+									<a class="dropdown-item btn btn-secondary" style="background-color:burlywood" href="@Url.Action("ChangeRole", new { userId = item.UserId, newRole = "Admin" })">Make Admin</a>
+									<a class="dropdown-item btn btn-secondary" style="background-color:burlywood" href="@Url.Action("ChangeRole", new { userId = item.UserId, newRole = "Moderator" })">Make Moderator</a>
+									<a class="dropdown-item btn btn-secondary" style="background-color:burlywood" href="@Url.Action("ChangeRole", new { userId = item.UserId, newRole = "User" })">Make User</a>
+								</div>
+							</div>
+						</td>
+
+					</tr>
+					count++;
+				}
+				<a class="btn btn-outline-success" asp-area="Admin" asp-controller="Category" asp-action="Create">Create</a>
+			</tbody>
+		</table>
+	</div>
+</div>
+

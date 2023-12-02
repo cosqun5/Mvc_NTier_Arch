@@ -2,6 +2,7 @@
 using DataAccess.Repositories.Abstract;
 using Entities.Concrate;
 using Entities.ViewModels.Abouts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Protocol.Core.Types;
@@ -9,6 +10,7 @@ using NuGet.Protocol.Core.Types;
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize]
 	public class AboutController : Controller
 	{
 		private readonly IAboutService _aboutService;
@@ -25,13 +27,14 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 			var result = await _aboutService.GetList();
 			return View(result);
 		}
+		[Authorize(Roles = "Moderator,Admin")]
 		public IActionResult Create()
 		{
-			
+
 			return View();
 		}
 		[HttpPost]
-		public async Task< IActionResult> Create(AboutCreatVM creatVM)
+		public async Task<IActionResult> Create(AboutCreatVM creatVM)
 		{
 			if (!ModelState.IsValid)
 			{
@@ -45,14 +48,16 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 			await _aboutService.Insert(creatVM);
 			return RedirectToAction("Index");
 		}
-		public async Task< IActionResult> Delete(int id)
+        [Authorize(Roles = "Moderator,Admin")]
+        public async Task<IActionResult> Delete(int id)
 		{
-			  await _aboutService.Delete(id);
+			await _aboutService.Delete(id);
 
 			return RedirectToAction("Index");
 		}
 		[HttpGet]
-		public async Task< IActionResult> Update(int id)
+        [Authorize(Roles = "Moderator,Admin")]
+        public async Task<IActionResult> Update(int id)
 		{
 			if (!ModelState.IsValid) return View();
 			About about = await _aboutService.GetById(id);
@@ -70,12 +75,12 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 				Phone = about.Phone,
 				Age = about.Age,
 				City = about.City,
-				
+
 			};
 			return View(updateVM);
 		}
 		[HttpPost]
-		public async Task< IActionResult> Update(AboutUpdateVM updateVM)
+		public async Task<IActionResult> Update(AboutUpdateVM updateVM)
 		{
 			await _aboutService.Update(updateVM);
 

@@ -1,12 +1,15 @@
 ﻿using Business.Services.Abstract;
 using Business.Services.Concrate;
 using Entities.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class LanguageController : Controller
+    [Authorize(Roles = "Moderator,Admin")]
+
+    public class LanguageController : Controller
 	{
 		private readonly ILanguageService _languageService;
 

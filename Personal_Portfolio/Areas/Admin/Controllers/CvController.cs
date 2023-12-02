@@ -1,12 +1,15 @@
 ﻿using DataAccess;
 using Entities.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	public class CvController : Controller
+    [Authorize(Roles = "Moderator,Admin")]
+
+    public class CvController : Controller
 	{
 		private readonly AppDbContext _context;
 
