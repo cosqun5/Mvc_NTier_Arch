@@ -1,0 +1,10 @@
+﻿@using Entities.Concrate
+@model List<About>
+@{
+    Layout = null;
+}
+@foreach (var item in Model)
+{
+    
+<img src="~/assets/img/@item.ImageUrl" alt="/">
+}

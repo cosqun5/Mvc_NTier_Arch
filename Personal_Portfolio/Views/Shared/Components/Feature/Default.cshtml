@@ -13,7 +13,8 @@
 				<div class="row">
 					<div class="col-lg-12 text-center text-lg-start">
 						<div class="hero-image d-inline-block d-lg-none">
-							<img src="~/arshia/arshia-plus/assets/img/webdesigner/profile-img.jpg" alt="/">
+
+							@await Component.InvokeAsync("FeatureImg")
 						</div>
 						<div class="hero-content mt-4 mx-auto mx-lg-0 text-lg-left mt-lg-none">
 							<p class="base-color">@item.Title</p>
@@ -24,17 +25,37 @@
 			</div>
 		</div>
 		<div class="hero-footer d-block d-lg-none">
-			<a class="download-cv primary-button mt-3 mb-4 d-lg-none" href="javascript:void(0);">Download CV</a>
+		<a class="download-cv primary-button mt-3 mb-4 d-lg-none" href="javascript:void(0); " onclick="downloadCV()">Download CV</a>
 			<div class="social d-lg-none mb-4 d-block">
-				<a href="javascript:void(0);" class="d-inline-block">
-					<i class="bi bi-whatsapp"></i>
+			<a href="https://www.linkedin.com/in/co%C5%9Fqun-salahov/;" class="d-inline-block">
+					<i class="bi bi-linkedin"></i>
 				</a>
-				<a href="javascript:void(0);" class="d-inline-block mx-4">
+			<a href="https://www.instagram.com/cowqun_salahli/;" class="d-inline-block mx-4">
 					<i class="bi bi-instagram"></i>
 				</a>
-				<a href="javascript:void(0);" class="d-inline-block">
-					<i class="bi bi-dribbble"></i>
+			<a href="https://github.com/cosqun5;" class="d-inline-block">
+					<i class="bi bi-github"></i>
 				</a>
 			</div>
 		</div>
 	}
+
+
+<script>
+	function downloadCV() {
+		// Faylı endirəcək endpoint üçün Controller action metodu
+		var downloadUrl = '/Home/DownloadCV';
+
+		// Fetch istəyi göndərək faylı endirmək
+		fetch(downloadUrl)
+			.then(response => response.blob())
+			.then(blob => {
+				// Faylı endirmək üçün link yaratmaq
+				var link = document.createElement('a');
+				link.href = window.URL.createObjectURL(blob);
+				link.download = 'Joshgun.pdf'; // CV faylının adını təyin edin
+				link.click();
+			})
+			.catch(error => console.error('CV endirilə bilmədi:', error));
+	}
+</script>
