@@ -1,4 +1,5 @@
 ﻿using Business.Services.Abstract;
+using Business.Services.Concrate;
 using DataAccess;
 using Entities.Concrate;
 using Microsoft.AspNetCore.Mvc;
@@ -12,14 +13,16 @@ namespace Personal_Portfolio.Controllers
 		private readonly AppDbContext _appDbContext;
 		private readonly IContactService _contactService;
 		private readonly IAboutService _aboutService;
+		private readonly IPortfolioService _portfolioService;
 
-		public HomeController(AppDbContext appDbContext, IContactService contactService, IAboutService aboutService)
-		{
-			_appDbContext = appDbContext;
-			_contactService = contactService;
-			_aboutService = aboutService;
-		}
-		public async Task< IActionResult> Index()
+        public HomeController(AppDbContext appDbContext, IContactService contactService, IAboutService aboutService, IPortfolioService portfolioService)
+        {
+            _appDbContext = appDbContext;
+            _contactService = contactService;
+            _aboutService = aboutService;
+            _portfolioService = portfolioService;
+        }
+        public async Task< IActionResult> Index()
 		{
 			HomeVM homeVM = new HomeVM()
 			{
@@ -59,5 +62,24 @@ namespace Personal_Portfolio.Controllers
 			return File(cvFileData, "application/pdf", cvFileName);
 		}
 
-	}
+        public async Task<IActionResult> Detail(int id)
+        {
+            Portfolio portfolio = await _appDbContext.Portfolios
+				.Include(p=>p.PortfolioImages)
+                .Include(p => p.Category) // Include metodu ile Category'yi yükleyin
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+            if (portfolio == null)
+            {
+				return RedirectToAction("Error");
+            }
+
+            return View(portfolio);
+        }
+		public IActionResult Error()
+		{
+			return View();
+		}
+
+    }
 }

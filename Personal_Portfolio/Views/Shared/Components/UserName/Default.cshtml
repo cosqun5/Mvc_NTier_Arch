@@ -1,0 +1,13 @@
+﻿@using Personal_Portfolio.Areas.Admin.ViewModels
+@model List<UserViewModel>
+@{
+	Layout = null;
+}
+@foreach (var item in Model)
+{
+
+	<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+		<img class="rounded-circle me-lg-2" src="~/assets/user-128.png" alt="" style="width: 40px; height: 40px;">
+		<span class="d-none d-lg-inline-flex">@item.UserName</span>
+	</a>
+}

@@ -54,7 +54,8 @@ namespace Business.Services.Concrate
 				CategoryId = creatVM.CategoryId,
 				Description = creatVM.Description,
 				Price = creatVM.Price,
-				PortfolioImages = images
+				PortfolioImages = images,
+				CreatedDate = creatVM.CreatedDate,
 
 			};
 			await _repository.Insert(_mapper.Map<Portfolio>(portfolio));
@@ -105,6 +106,10 @@ namespace Business.Services.Concrate
 		{
 			return await _repository.GetById(id);
 		}
+
+
+
+
 		public async Task Update(PortfolioUpdateVM updateVM)
 		{
 			// ViewModel məlumatlarını Portfolio obyektinə çevir
@@ -121,6 +126,7 @@ namespace Business.Services.Concrate
 			existingPortfolio.CategoryId = updateVM.CategoryId;
 			existingPortfolio.Description = updateVM.Description;
 			existingPortfolio.Price = updateVM.Price;
+			existingPortfolio.CreatedDate = updateVM.CreatedDate;
 
 			// Yeni şəkillər əlavə edilibsə, köhnə şəkilləri sil və yeni şəkilləri əlavə et
 			if (updateVM.Photos != null && updateVM.Photos.Any())

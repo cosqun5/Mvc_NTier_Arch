@@ -10,5 +10,6 @@ namespace DataAccess.Repositories.Abstract
 {
 	public interface IPortfolioRepository:IBaseRepository<Portfolio>
 	{
+
 	}
 }

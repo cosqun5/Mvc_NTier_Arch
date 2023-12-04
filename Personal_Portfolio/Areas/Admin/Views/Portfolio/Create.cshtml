@@ -36,6 +36,12 @@
 
 				</div>
 				<div class="mb-3">
+					<label asp-for="CreatedDate" class="form-label"></label>
+					<input asp-for="CreatedDate" class="form-control">
+					<span asp-validation-for="CreatedDate"></span>
+
+				</div>
+				<div class="mb-3">
 					<label asp-for="IsDeleted" class="form-label"></label>
 					<input asp-for="IsDeleted" class="form-control">
 					<span asp-validation-for="IsDeleted"></span>

@@ -10,7 +10,6 @@ using NuGet.Protocol.Core.Types;
 namespace Personal_Portfolio.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	[Authorize]
 	public class AboutController : Controller
 	{
 		private readonly IAboutService _aboutService;

@@ -1,4 +1,4 @@
-using DataAccess;
+﻿using DataAccess;
 using Business;
 using Entities.Concrate;
 using System.Configuration;
@@ -13,7 +13,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.ConfigureApplicationCookie(options =>
+{
+	options.AccessDeniedPath = "/Account/AccessDenied"; // Erişim reddedildiğinde yönlendirilecek sayfanın yolu
+});
 builder.Services.AddDataAccessConfiguration(builder.Configuration);
 builder.Services.AddBusinessConfiguration();
 var app = builder.Build();

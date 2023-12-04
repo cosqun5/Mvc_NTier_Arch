@@ -34,12 +34,13 @@ namespace Personal_Portfolio.Controllers
 				UserName = registerVM.Username,
 				Email = registerVM.Email
 			};
+
 			IdentityResult registerResult = await _userManager.CreateAsync(newUser, registerVM.Password);
             if (registerResult.Succeeded)
             {
                 // Qeydiyyatdan keçən istifadəçiyə "User" rolunu əlavə et
                 await _userManager.AddToRoleAsync(newUser, "User");
-
+                ViewBag.UserName = newUser.UserName;
                 return RedirectToAction(nameof(Login));
             }
             else

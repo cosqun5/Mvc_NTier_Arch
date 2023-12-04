@@ -11,6 +11,7 @@ public class PortfolioCreateVM
 	public bool IsDeleted { get; set; }
 	public double Price { get; set; }
 	public int CategoryId { get; set; }
+	public DateTime? CreatedDate { get; set; }
 	public List<IFormFile> Photos { get; set; }
 	public List<Category>? Categories { get; set; }
 }

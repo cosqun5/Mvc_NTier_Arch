@@ -193,24 +193,56 @@
       "PackagePath": "staticwebassets\\arshia\\arshia-plus\\webdesigner-dark.html"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\2cb49ae8-0172-4d25-b3b9-9f03ba8bf2bf.png",
-      "PackagePath": "staticwebassets\\assets\\img\\2cb49ae8-0172-4d25-b3b9-9f03ba8bf2bf.png"
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\0b4a0f17-12a8-4cbc-838c-4a24ce4403d4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\0b4a0f17-12a8-4cbc-838c-4a24ce4403d4.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\49262be0-9ab9-4d76-a0b1-e03036ea241a.png",
-      "PackagePath": "staticwebassets\\assets\\img\\49262be0-9ab9-4d76-a0b1-e03036ea241a.png"
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\11dda0aa-32ed-4e59-bc8e-b6c6bbe9958f.png",
+      "PackagePath": "staticwebassets\\assets\\img\\11dda0aa-32ed-4e59-bc8e-b6c6bbe9958f.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\3164f43d-0803-4368-b3a0-3ae6dfe25fa4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\3164f43d-0803-4368-b3a0-3ae6dfe25fa4.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\33fe56bd-3840-498c-beca-874a14908a8e.png",
+      "PackagePath": "staticwebassets\\assets\\img\\33fe56bd-3840-498c-beca-874a14908a8e.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\542fb801-fb49-4bc6-bca6-78c5b0b2078a.png",
+      "PackagePath": "staticwebassets\\assets\\img\\542fb801-fb49-4bc6-bca6-78c5b0b2078a.png"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\5be8dd82-2618-4961-9c11-c6e87fe75b3b.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\5be8dd82-2618-4961-9c11-c6e87fe75b3b.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\9c8b95ce-636c-41fb-93cc-2cb3acfe7a25.png",
-      "PackagePath": "staticwebassets\\assets\\img\\9c8b95ce-636c-41fb-93cc-2cb3acfe7a25.png"
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\64749f0b-9adb-42f4-9f9c-8ac68b1c5517.png",
+      "PackagePath": "staticwebassets\\assets\\img\\64749f0b-9adb-42f4-9f9c-8ac68b1c5517.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\da557f2a-050a-43ee-ba57-b8c5b3470f39.png",
-      "PackagePath": "staticwebassets\\assets\\img\\da557f2a-050a-43ee-ba57-b8c5b3470f39.png"
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\664cbc82-390d-4b42-86e0-69804db9bce3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\664cbc82-390d-4b42-86e0-69804db9bce3.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\6d769137-d0b7-4ddd-9ef4-6855d7916bd3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\6d769137-d0b7-4ddd-9ef4-6855d7916bd3.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\752bf22e-b15d-420d-9579-e9c7f8eb865d.png",
+      "PackagePath": "staticwebassets\\assets\\img\\752bf22e-b15d-420d-9579-e9c7f8eb865d.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\b0a3c834-c8f9-4c2e-825f-9c59781bfc94.png",
+      "PackagePath": "staticwebassets\\assets\\img\\b0a3c834-c8f9-4c2e-825f-9c59781bfc94.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\img\\b6ceebd4-a9e0-4cba-90ec-6f5dd7e6125d.png",
+      "PackagePath": "staticwebassets\\assets\\img\\b6ceebd4-a9e0-4cba-90ec-6f5dd7e6125d.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\assets\\user-128.png",
+      "PackagePath": "staticwebassets\\assets\\user-128.png"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Mvc.NTierArch\\Personal_Portfolio\\wwwroot\\darkpan-1.0.0\\404.html",

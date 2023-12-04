@@ -16,7 +16,7 @@
 				<div class="portfolio-image">
 					<img src="~/assets/img/@item.PortfolioImages.Where(i=>i.IsActive).FirstOrDefault().Path" alt="/">
 					<div class="portfolio-icon">
-						<a href="portfolio-01-dark.html" class="ajax-page-load">
+						<a asp-action="Detail" asp-controller="Home" asp-route-Id="@item.Id" class="ajax-page-load">
 							<i class="bi bi-file-earmark-text"></i>
 						</a>
 					</div>

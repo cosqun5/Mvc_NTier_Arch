@@ -57,6 +57,7 @@ namespace Personal_Portfolio.Areas.Admin.Controllers
 				Description = portfolio.Description,
 				IsDeleted = (bool)portfolio.IsDeleted,
 				Price = (double)portfolio.Price,
+				CreatedDate = DateTime.Now,
 				CategoryId = (int)portfolio.CategoryId,
 				Categories = await _categoryService.GetList()
 
